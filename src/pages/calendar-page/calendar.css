@@ -1,0 +1,124 @@
+.rbc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2B7F;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.rbc-toolbar .rbc-btn-group button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 550;
+    border-radius: 5px; 
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    background-color: #0A1933;
+}
+
+.rbc-toolbar .rbc-btn-group button:hover {
+    background-color: #FF3656;
+    color: white;
+    border: 1px solid white;
+}
+
+.rbc-toolbar .rbc-btn-group button.rbc-active {
+    background-color: #FF3656;
+    border: 1px solid white;
+    color: #fff;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+    font-size: 42px;
+    color: white;
+}
+
+.rbc-time-view .rbc-time-content .rbc-timeslot-group > * {
+    border-bottom: none !important;
+    border-top: 0px !important;
+}  
+
+.rbc-timeslot-group {
+    border-bottom: none !important;
+}
+
+.rbc-timeslot-group .rbc-time-slot .rbc-label {
+    padding-top: 8px !important;
+    margin-top: 5px !important;
+}
+  
+.rbc-time-gutter, .rbc-day-slot {
+    background-image: 
+        linear-gradient(to bottom,rgb(101, 101, 101) 1px, transparent 1px);
+    background-size: 100% 100px;
+    background-position: 0 100px;
+}
+
+.rbc-time-view {
+    border: none !important;
+}
+
+.rbc-month-view {
+    border: none !important;
+}
+
+.rbc-allday-cell {
+    display: none !important;
+}
+  
+.rbc-calendar .rbc-month-view .rbc-date-cell .rbc-button-link {
+    font-size: 16px !important;
+    padding: 5px;
+    cursor: pointer;
+    color: white; 
+}
+
+.rbc-time-view .rbc-time-content {
+    .rbc-time-gutter,
+    .rbc-time-header-gutter {
+      width: 80px !important;
+      color: white;
+    }
+  
+    .rbc-timeslot-group {
+      min-height: 100px;
+    }
+}
+
+.rbc-header {
+    cursor: pointer !important;
+    font-size: 16px;
+    color: white;
+}
+
+.rbc-current-time-indicator {
+    background-color: #FF3656;
+    height: 3px;
+    width: 100% !important;
+}
+
+.rbc-time-view .rbc-day-slot .rbc-current-time-indicator {
+    width: 100% !important;
+    left: 0 !important;
+}
+
+.weekend {
+    background-color: #05070A !important;
+}
+
+.next-month-weekend {
+    background-color: #05070A !important;
+    opacity: 0.7;
+}
+
+.weekday {
+    background-color: #111B2C !important;
+}
+
+.next-month-weekday {
+    background-color: #111B2C !important;
+    opacity: 0.7;
+}

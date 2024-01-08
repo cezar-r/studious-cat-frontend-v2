@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Routes, Route } from "react-router-dom";
+import CalendarPage from './pages/calendar-page/CalendarPage';
+import ProfilePage from './pages/profile-page/ProfilePage';
+import CreateProfilePage from './pages/create-profile-page/CreateProfilePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<CalendarPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/create-profile" element={<CreateProfilePage />} />
+      </Routes>
     </div>
   );
 }
